@@ -1,0 +1,54 @@
+Q1. What happens when we run program without 'static' keyword?
+Ans->Error: Main method is not static in class Helloji, please define the main method as:
+   public static void main(String[] args)
+
+It gives error on run time, it is because JVM does not have any object to run the main method it directly so it runs the program using class name.
+------------------------------
+Q2. What happens when the filename is different than the class name in the file?
+Ans->It depends whether class is public or not,
+
+If the class public then the file name and class name shoud be matched.
+
+If the class is not public then no need to match file name and class name.
+-----------------------------
+Q3. Write Java programs to find out what happen when we use different type of literals for data types.
+Like try to use float literal for integer data type
+Ans->
+error: incompatible types: possible lossy conversion from float to int
+int x=2.4f;	
+if we are trying to store float literal to int type it gives error.
+-----------------------------
+Q4. Why java is Simple?
+Ans->Java is simple because java does not support complex like pointer so that the execution time for execution of program will be less.
+It has concept of garbage collection which automatically destroy the useless objects.
+-----------------------------
+
+Q5. Why java is secured language?
+Ans->The main reason,java is more secured because java does not support the concept of pointers,because if java support pointers then user can easily point to any memory location.
+-----------------------------
+
+Q6. Why java is portable?
+Ans-> Java is portable beacause you can run any java .class file created in one operating system to another operating sysytem.
+-----------------------------
+
+Q7. Why java is robust?
+Ans-> Java is robust is because it has strong memory management.It has security features, in absence of pointers it bypass the security dilemmas.
+-----------------------------
+
+Q8. How java is Architecture-Neutral?
+Ans-> Java is Architectural neutral because there is no implementation dependent features, for example,  the size of primitive is fixed.
+-----------------------------
+
+Q9. Java has high Performance?
+Ans->Java is faster than other traditional language python because it has compiler also, but it is slower than other compiler based language like C++.
+-----------------------------
+
+Q10.Why java is distributed? 
+Ans->java is distributed because it provides users to create distributed applications in java.
+     RMI(Remote Method Invocation) and EJB(Enterprise Java Beans) are used for creating distributed applications.
+     This feature of java makes us able to access files by calling the methods from any machine on the internet.
+-----------------------------
+
+Q11.Why java is dynamic?
+Ans-> Java is dynamic language because it supports dynamic loading of classes.It means classes are loaded on demand.
+-----------------------------     
