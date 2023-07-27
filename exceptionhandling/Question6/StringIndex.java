@@ -12,13 +12,13 @@ class StringIndex
 	static List<String> list;
 	public static void main(String ar[])
 	{
-		// list=new ArrayList<>();
-		// list.add("Yogesh");
-		// list.add("Naveen");
-		// list.add("Harsh");
-		// list.add("Nabi");
-		// list.add("Akash");
-		// list.add("Madhur");
+		list=new ArrayList<>();
+		list.add("Yogesh");
+		list.add("Naveen");
+		list.add("Harsh");
+		list.add("Nabi");
+		list.add("Akash");
+		list.add("Madhur");
 		
 		if(list==null)
 		{
