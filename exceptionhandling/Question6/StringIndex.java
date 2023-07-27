@@ -12,14 +12,32 @@ class StringIndex
 	static List<String> list;
 	public static void main(String ar[])
 	{
-		list=new ArrayList<>();
-		//list.add("Yogesh");
-		//list.add("Naveen");
-		//list.add("Harsh");
-		//list.add("Nabi");
-		//list.add("Akash");
-		String name=list.get(x);
-		list.add("Madhur");
+		// list=new ArrayList<>();
+		// list.add("Yogesh");
+		// list.add("Naveen");
+		// list.add("Harsh");
+		// list.add("Nabi");
+		// list.add("Akash");
+		// list.add("Madhur");
+		
+		if(list==null)
+		{
+			throw new NullPointerException("your list is empty");
+		}
+		
+		
+		int x;
+		try
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.print("Enter index: ");
+			x=sc.nextInt();
+			String name=list.get(x);
 		System.out.println("The name at index "+x+" is : "+name);
+		}
+		catch(IndexOutOfBoundsException e1)
+		{
+		throw new IndexOutOfBoundsException("This index is not available");
+		}
 	}	
 }
