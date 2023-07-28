@@ -4,7 +4,7 @@
 
 interface Shape
 {
-	float area(float x,float y);
+	float area(float... x);
 }
 class LambdaExpression
 {
@@ -12,25 +12,32 @@ class LambdaExpression
 public static void main(String ar[])
 {
 	//area of rectangle
-	Shape rectangle=(l,b)->l*b;
+	Shape rectangle=(a)->a[0]*a[1];
 	float area1=rectangle.area(12,4);
 	System.out.println("Area of rectangle is: "+area1);
 
 	//area of square
-	Shape square=(s1,s2)->s1*s2;
-	float area2=square.area(4,4);
+	Shape square=(r)->(float)(r[0]*r[0]);
+	float area2=square.area(4);
 	System.out.println("Area of square is: "+area2);
 	
 	//area of circle
-	Shape circle=(r1,r2)->3.14f*r1*r2;
+	Shape circle=(a)->3.14f*a[0]*a[0];
 	float area3=circle.area(2,2);
 	System.out.println("Area of circle is: "+area3);
 	
-	Shape sphere=(r1,r2)->4*3.14f*r1*r2;
+	//area of sphere
+	Shape sphere=(a)->4*3.14f*a[0]*a[0];
 	float area4=sphere.area(5,5);
 	System.out.println("Area of sphere is: "+area4);
 	
-	Shape cylinder=(r,h)->2*3.14f*r*(r+h);
+	//area of cylinder
+	Shape cylinder=(a)->2*3.14f*a[0]*(a[0]+a[1]);
 	float area5=cylinder.area(3,5);
 	System.out.println("Area of Cylinder is: "+area5);
+	
+	//area of cube
+	Shape cube=(a)->6*a[0]*a[0];
+	float area6=cube.area(5,5);
+	System.out.println("Area of cube is: "+area6);
 }}

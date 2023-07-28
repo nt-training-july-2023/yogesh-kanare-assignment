@@ -14,14 +14,20 @@ class RevertLine
 	{
 		try
 		{ 
+		//file where data is present
 		read=new FileReader("C:/Users/yoges/OneDrive/Desktop/NucleusTeq_Assignments/IO/Question3/originalfile.txt");
 		bufferedReader=new BufferedReader(read);
 		
-		 write=new FileWriter("C:/Users/yoges/OneDrive/Desktop/NucleusTeq_Assignments/IO/Question3/revertfile.txt");
+		//file where data have to be stored in reverse order
+		write=new FileWriter("C:/Users/yoges/OneDrive/Desktop/NucleusTeq_Assignments/IO/Question3/revertfile.txt");
+		
+		//in stack the data is pushed
 		while((line=bufferedReader.readLine())!=null)
 		{
 			revert.push(line);
 		}
+		
+		//data is stored in reverfile.txt 
 		while(!revert.isEmpty())
 		{
 			write.write(revert.pop()+"\n");
