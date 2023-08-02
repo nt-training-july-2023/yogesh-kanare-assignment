@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"exceptionhandling.q1.javadoc","l":"RectangleCircleTriangleArea"}];updateSearchResults();
