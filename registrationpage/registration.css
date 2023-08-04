@@ -135,7 +135,7 @@ form .button input:hover{
 }
 
 /*media query for responsiveness*/
-@media (max-width: 584px){
+@media (max-width: 700px){
     .container{
         max-width: 100%;
     }
